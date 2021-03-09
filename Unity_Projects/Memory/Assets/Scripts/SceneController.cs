@@ -36,6 +36,10 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+        ui = GetComponent<UIController>();
+        ResetTimeOut();
+        paused = false;
+
         // Select random card
         //---int id = Random.Range(0, images.Length);
         //---originalCard.SetCard(id, images[id]);
@@ -84,7 +88,8 @@ public class SceneController : MonoBehaviour
         get { return _paused; }
         set { _paused = value;
               Time.timeScale = value ? 0.0f : 1.0f; 
-              ui.ShowPauseMenu(value); }
+              Messenger.Broadcast(value ? GameEvent.PAUSED : GameEvent.RESUMED);
+            }
     }
 
     public bool gameover
@@ -105,8 +110,21 @@ public class SceneController : MonoBehaviour
     private void Awake()
     {
         ui = GetComponent<UIController>();
+        //---ResetTimeOut();
+        //---paused = false;
+        Messenger<float>.AddListener(GameEvent.TIMEOUT_CHANGED, OnTimeOutChanged);
+        timeOutSeconds = PlayerPrefs.GetFloat("timeout");
+    }
+
+    private void OnDestroy()
+    {
+        Messenger<float>.RemoveListener(GameEvent.TIMEOUT_CHANGED, OnTimeOutChanged);
+    }
+
+    void OnTimeOutChanged(float timeout)
+    {
+        timeOutSeconds = timeout;
         ResetTimeOut();
-        ui.ShowPauseMenu(false);
     }
 
     public void CardRevealed(MemoryCard card) 

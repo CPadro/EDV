@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SettingsPopup : MonoBehaviour
 {
-    [SerializeField] private SliderJoint2D timeOutSlider;
+    [SerializeField] private Slider timeOutSlider;
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class SettingsPopup : MonoBehaviour
 
     public void OnTimeOutValue(float timeout)
     {
-        Debug.Log("Timeout: " + timeout);
         PlayerPrefs.SetFloat("timeout", timeout);
+        Messenger<float>.Broadcast(GameEvent.TIMEOUT_CHANGED, timeout);
     }
 }

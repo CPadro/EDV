@@ -41,5 +41,26 @@ public class UIController : MonoBehaviour
         pauseMenu.SetActive(isPaused);
     }
 
+    private void Awake()
+    {
+        Messenger.AddListener(GameEvent.PAUSED, OnPaused);
+        Messenger.AddListener(GameEvent.RESUMED, OnResumed);
+    }
+
+    private void OnDestroy()
+    {
+        Messenger.RemoveListener(GameEvent.PAUSED, OnPaused);
+        Messenger.RemoveListener(GameEvent.RESUMED, OnResumed);
+    }
+
+    private void OnPaused()
+    {
+        ShowPauseMenu(true);
+    }
+
+    private void OnResumed()
+    {
+        ShowPauseMenu(false);
+    }
     
 }
