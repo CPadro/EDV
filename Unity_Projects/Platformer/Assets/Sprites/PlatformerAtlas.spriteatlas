@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlatformerAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 70d9eb741105e574680997161675e8a5, type: 3}
+    totalSpriteSurfaceArea: 8307633
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8dc38c90c6d3b4343bf9a5e838280565, type: 3}
+  - {fileID: 8542446958982368577, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -7992755757586993172, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 8864034409169887785, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 7004440288895839972, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -411013064700259664, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 6275793985018972928, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 1232259728355128491, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 5405791402273722807, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -3482009316953301451, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 972815921691113277, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 6961184756046694260, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 2766532208470182908, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 2276517618854843279, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 3815415095723072779, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -4806221281434914605, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 3362081453723829922, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -5353345704315787833, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 7852721918260764501, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -5287691970337079011, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 8128232051634282923, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 8463421244086038544, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -5112244563377136436, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 2348174592309519229, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 2638211678173979736, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: -8413289709236553939, guid: 93f9daf3b017418459d5fd0385d6e667, type: 3}
+  - {fileID: 21300000, guid: 4015ac664a125b64a97bb30c3346dd35, type: 3}
+  - {fileID: 21300000, guid: 3c71a7d63e8c9b14b8d040fb7c3b46de, type: 3}
+  - {fileID: 21300000, guid: 7616ae283bb306f4ebf9be9d20636977, type: 3}
+  - {fileID: 21300000, guid: 99bd2a19ed058de4f9f7f71345c20d31, type: 3}
+  - {fileID: 21300000, guid: f5545fcb7c2fca945a750203f38579c2, type: 3}
+  - {fileID: 21300000, guid: da9790bc07203344a8c95e15f3c7697c, type: 3}
+  - {fileID: 21300000, guid: fb572ebc9da1b34469c68817eb2ca979, type: 3}
+  - {fileID: 21300000, guid: 64e6695eba67faa4aac961971c751d68, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - b3
+  - player_tilesheet_21
+  - player_tilesheet_20
+  - player_tilesheet_22
+  - player_tilesheet_24
+  - player_stand
+  - player_jump
+  - player_idle
+  - player_tilesheet_3
+  - player_tilesheet_2
+  - player_tilesheet_5
+  - player_tilesheet_4
+  - player_tilesheet_7
+  - player_tilesheet_6
+  - player_tilesheet_8
+  - player_walk1
+  - player_walk2
+  - player_tilesheet_11
+  - player_tilesheet_12
+  - player_tilesheet_13
+  - player_tilesheet_14
+  - player_tilesheet_15
+  - player_tilesheet_16
+  - player_tilesheet_17
+  - player_tilesheet_18
+  - player_tilesheet_19
+  - b4
+  - platform
+  - b2
+  - b1
+  - b0
+  - sprung
+  - boxCrate_single
+  - spring
+  m_Tag: PlatformerAtlas
+  m_IsVariant: 0
